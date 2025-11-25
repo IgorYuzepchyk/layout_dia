@@ -23,17 +23,27 @@
   &__blocks {
     // display: flex;
 
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 20px;
+
+    // @include on-tablet {
+    //   grid-template-columns: repeat(6, 1fr);
+    //   gap: 24px;
+    // }
+
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 
-    @include on-tablet {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 24px;
-    }
+   
 
 
-  }
+
+}
+
+
 
   &__blocks-part1 {
     // display: flex;
@@ -122,8 +132,6 @@
     }
 
 
-
-
     width: 280px;
     height: 264px;
 
@@ -144,9 +152,9 @@
 
   }
 
-  &__blocks > *:nth-child(odd) {
-    margin-top: 132px;
-  }
+  // &__blocks > *:nth-child(odd) {
+  //   margin-top: 132px;
+  // }
 
 
   &__blocks-name-container {
