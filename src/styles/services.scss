@@ -20,61 +20,8 @@
     flex-direction: row;
   }
 
-  &__blocks {
-    // display: flex;
 
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // gap: 20px;
-
-    // @include on-tablet {
-    //   grid-template-columns: repeat(6, 1fr);
-    //   gap: 24px;
-    // }
-
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-
-   
-
-
-
-}
-
-
-
-  &__blocks-part1 {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
-    // padding-top: 130px;
-    // padding-right: 30px;
-    // gap: 20px;
-
-    // @include on-tablet {
-    //   padding-top: 130px;
-    //   padding-right: 30px;
-    //   gap: 30px;
-    // }
-
-    // @include on-desktop {
-    //   padding-top: 130px;
-    //   padding-right: 30px;
-    //   gap: 20px;
-    // }
-
-  }
-
-  &__blocks-part2 {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // gap: 20px;
-  }
-
-  &__title {
+    &__title {
     width: 282px;
     height: 291px;
 
@@ -124,13 +71,60 @@
 
   }
 
+
+
+  &__blocks {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include on-tablet {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px;
+    }
+
+
+  }
+
+
+
+  &__blocks-part1 {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // padding-top: 130px;
+    // padding-right: 30px;
+    // gap: 20px;
+
+    // @include on-tablet {
+    //   padding-top: 130px;
+    //   padding-right: 30px;
+    //   gap: 30px;
+    // }
+
+    // @include on-desktop {
+    //   padding-top: 130px;
+    //   padding-right: 30px;
+    //   gap: 20px;
+    // }
+
+  }
+
+  &__blocks-part2 {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // gap: 20px;
+  }
+
+
   &__blocks-001 {
     grid-column: 1/-1;
 
     @include on-tablet {
       grid-column: span 3;
     }
-
 
     width: 280px;
     height: 264px;
@@ -150,11 +144,15 @@
       height: 264px;
     }
 
+    &:nth-child(odd) {
+      transform: translateY(50%);
+    }
+
   }
 
-  // &__blocks > *:nth-child(odd) {
-  //   margin-top: 132px;
-  // }
+  &:nth-child(even) {
+    transform: translateX(10px);
+  }
 
 
   &__blocks-name-container {
@@ -180,7 +178,7 @@
     text-transform: uppercase;
 
     color:  #2060F6;
-;
+
 
   }
 
