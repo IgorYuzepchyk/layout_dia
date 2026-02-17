@@ -1,21 +1,14 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'normalize';
 @import 'header';
 @import 'navigation';
-@import 'about-us';
+@import 'strategic';
+@import 'slider';
+@import 'who-we-are';
 @import 'our-expertise';
-@import 'services';
+@import 'process';
 @import 'testimonials';
 @import 'vision';
 @import 'contacts';
-
-body {
-  background: $c-gray;
-  font-family: Poppins, sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  min-width: 320px;
-  // @include content-padding-inline;
-}
-
-

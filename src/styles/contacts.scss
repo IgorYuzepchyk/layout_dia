@@ -1,132 +1,181 @@
 .contacts {
-  display: none !important;
+  // display: none !important;
 
   @include content-padding-inline;
 
-  background-color:  #2C2C2C;
+  background-color: #2c2c2c;
 
   &__grid-container {
     display: grid;
-    @include page-grid;
 
+    @include page-grid;
   }
 
-
-
-
-  &__container-form {
-    width: 370px;
-        grid-column: 1/-1;
+  &__message {
+    grid-column: 1/-1;
 
     @include on-tablet {
-      grid-column: 2/-2;
+      grid-column: 1/6;
     }
 
     @include on-desktop {
-      grid-column: span 5;
+      grid-column: 1/6;
     }
-
   }
 
-
-
   &__form {
-
     display: flex;
     flex-direction: column;
-
-
-
   }
 
   &__email {
-
-    width: 370px;
     height: 41px;
 
     border: none;
     outline: none;
 
-    border-bottom: 1px solid  #FFF;
+    border-bottom: 1px solid #fff;
     margin-bottom: 48px;
-    background-color:  #2C2C2C;
+    background-color: #2c2c2c;
+
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #fff;
+
+    &::placeholder {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #fff;
+    }
+
+    &:focus {
+      border-bottom: 1px solid #144ed4;
+    }
   }
 
   &__name {
-
-    width: 370px;
     height: 41px;
 
     border: none;
     outline: none;
 
-    border-bottom: 1px solid  #FFF;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #fff;
+
+    &::placeholder {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #fff;
+    }
+
+    border-bottom: 1px solid #fff;
     margin-bottom: 48px;
-    background-color:  #2C2C2C;
+    background-color: #2c2c2c;
+
+    &:focus {
+      border-bottom: 1px solid #144ed4;
+    }
   }
 
-  &__massege {
-
-    width: 370px;
+  &__input {
     height: 41px;
 
     border: none;
     outline: none;
 
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #fff;
 
-    border-bottom: 1px solid  #FFF;
+    &::placeholder {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #fff;
+    }
+
+    border-bottom: 1px solid #fff;
     margin-bottom: 80px;
-    background-color:  #2C2C2C;
-  }
+    background-color: #2c2c2c;
 
+    &:focus {
+      border-bottom: 1px solid #144ed4;
+    }
+  }
 
   &__form-button {
     width: 264px;
     height: 56px;
     border-radius: 8px;
 
+    background-color: #144ed4;
 
-    background-color: #144ED4;
-
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 15px;
 
     line-height: 100%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
-    color: #FFF;
+    color: #fff;
 
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 1px 4px 16px 0 #e8e8f066;
+    }
   }
 
   &__information {
-
+    padding-top: 80px;
 
     grid-column: 1/-1;
 
     @include on-tablet {
-      grid-column: 2/-2;
+      grid-column: 1/5;
+      padding-top: 120px;
     }
 
     @include on-desktop {
-      grid-column: span 5;
+      padding-top: 0;
+      grid-column: 7/12;
+    }
+
+    @include on-big-desktop {
+      grid-column: 8/13;
     }
   }
 
   &__title {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
-    color:  #FFF;
-
-
+    color: #fff;
   }
 
   &__phone {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 13px;
     line-height: 100%;
@@ -135,26 +184,27 @@
 
     opacity: 0.5;
 
-    color:  #FFF;
-
-
+    color: #fff;
   }
-
 
   &__phone-number {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
-    color:  #FFF;
+    text-decoration: none;
 
+    color: #fff;
+
+    &:hover {
+      color: #144ed4;
+    }
   }
 
-
   &__visit-us {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 13px;
     line-height: 100%;
@@ -163,7 +213,7 @@
 
     opacity: 0.5;
 
-    color:  #FFF;
+    color: #fff;
   }
 
   &__adress {
@@ -171,13 +221,19 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
-    color:  #FFF;
+    text-decoration: none;
+
+    color: #fff;
+
+    &:hover {
+      color: #144ed4;
+    }
   }
 
   &__our-socials-title {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 13px;
     line-height: 100%;
@@ -186,8 +242,7 @@
 
     opacity: 0.5;
 
-    color:  #FFF;
-
+    color: #fff;
   }
 
   &__icon {
@@ -201,17 +256,13 @@
     margin-right: 32px;
   }
 
+  padding-top: 72px;
 
-  &__bottom {
-
+  @include on-tablet {
+    padding-top: 180px;
   }
-
-
-
 }
 
 .contacts__social-icon:hover .contacts__icon {
-  fill: #144ED4;
+  fill: #144ed4;
 }
-
-

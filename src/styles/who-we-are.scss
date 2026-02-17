@@ -1,10 +1,7 @@
-.about-us {
-
+.who-we-are {
   @include content-padding-inline;
 
-
   &__content {
-
     padding: 120px 20px;
     margin: 0 auto;
 
@@ -15,16 +12,14 @@
     @include on-desktop {
       padding: 148px 154px;
     }
-
-
   }
 
   &__title {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: center;
     vertical-align: middle;
 
@@ -37,15 +32,14 @@
     @include on-tablet {
       margin-bottom: 16px;
     }
-
   }
 
   &__description {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: center;
 
     margin: 0;
@@ -56,6 +50,5 @@
     @include on-tablet {
       font-size: 24px;
     }
-
   }
 }
